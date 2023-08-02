@@ -10,12 +10,12 @@ public class Loops {
         }
 
         // Custom for loop
-        // Scanner in = new Scanner(System.in);
-        // int n = in.nextInt();
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
 
-        // for (int num = 0; num <= n; num++) {
-        //     System.out.print(num + " ");
-        // }
+        for (int num = 0; num <= n; num++) {
+            System.out.print(num + " ");
+        }
 
         // While Loop
         int num = 1;
@@ -24,6 +24,6 @@ public class Loops {
             num++;
         }
 
-        
+        in.close();
     }
 }
