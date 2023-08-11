@@ -31,9 +31,9 @@ public class firstArray {
     // The same declaration can also be done as the following:
         // int[] ros;
         // ros = new int[];
-        // int rnos = {23, 12, 45, 32, 15};
+           // int rnos = {2:q3, 12, 45, 32, 15};
     
-
+ 
     // Trying to create character array (String)
     String[] arr = new String[4];
     System.out.println(arr[3]);
@@ -49,6 +49,5 @@ public class firstArray {
         // eg: int num = null; // does not works
         // This is because int is a primitive datatype but String[] is not!
     // 2 - NULL is not a datatype; it is a literal
-
   }
 }
