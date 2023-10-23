@@ -11,7 +11,7 @@ public class finalKeyWord {
     // However this is only applicable for primitive datatypes
     // When a non primitive is final, you cannot reassign, but values can be changed
     final A ritesh = new A("Ritesh Koushik");
-    kunal.name = "new name"; // this is allowed
+    ritesh.name = "new name"; // this is allowed
   }
 
   class A {

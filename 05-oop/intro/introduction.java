@@ -33,7 +33,7 @@ public class introduction {
 
     System.out.println(ritesh); // shows the memory location at which it is stored
 
-    // If not populated with date, it takes the default values
+    // If not populated with data, it takes the default values
     System.out.println(ritesh.rno); // default = 0
     System.out.println(ritesh.name); // default = null
     System.out.println(ritesh.marks); // default = 0.0
