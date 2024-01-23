@@ -1,6 +1,8 @@
+import java.util.Arrays;
+
 public class Solution {
 
-    public String longestCommonPrefix(String[] strs){
+    public String longestCommonPrefixBRUTE(String[] strs){
         // Brute force method
         // This method was not handling all edge cases
 
@@ -23,6 +25,25 @@ public class Solution {
             }     
         }
         return "";
+    }
+
+    public String longestCommonPrefix(String[] v){
+
+        // Optimized method
+
+        StrinBuilder ans = new StringBuilder();
+        Arrays.sort(v); // Brilliancy
+
+        String first = v[0];
+        String last = v[v.length - 1];
+
+        for (int i = 0; i < Math.min(first.length(), last.length()); i++) {
+            if(first.charAt(i) != last.charAt(i)){
+                return ans;
+            }
+            ans += first[i];
+        }
+        return ans
     }
 
 
