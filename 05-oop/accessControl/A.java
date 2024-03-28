@@ -3,7 +3,7 @@
  */
 public class A {
 
-  int num;
+  private int num;
   String name;
   int[] arr;
 
@@ -11,5 +11,13 @@ public class A {
     this.num = num;
     this.name = name;
     this.arr = new int[num];
+  }
+
+  public void setNum(int num){
+    this.num = num 
+  }
+
+  public void getNum(){
+    return this.num;
   }
 }
