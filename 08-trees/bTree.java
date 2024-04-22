@@ -81,4 +81,56 @@ public class bTree {
        tree.populate(input);
        tree.displayTree(); // Displaying entire tree
     } 
+
+    // Traversals
+    // 1. PreOrder Traversal
+    public void preOrder(){
+        preOrder(root);
+    }
+    private void preOrder(Node node){
+        // Base case : If left, right or current node is null then return
+        if (node == null){
+            return;
+        }
+        // 1. Print the current node
+        System.out.println(node.value + " ");
+        // 2. Go to left node
+        preOrder(node.left);
+        // 3. Go to right node
+        preOrder(node.right);
+    }
+
+    // 2. InOrder traversal
+    // Generates sorted array for BST
+    public void inOrder(){
+        inOrder(root);
+    }
+    private void inOrder(Node node){
+        if (node == null){
+            return;
+        }
+        // 1. First print left subtree
+        inOrder(node.left);
+        // 2. Then print node value
+        System.out.println(node.value + " ");
+        // 3. Then print right subtree
+        inOrder(node.right);
+    }
+    
+    // 3. PostOrder Traversal
+    // Useful for deleting  items in BTree
+    public void postOrder(){
+        postOrder(root);
+    }
+    private void postOrder(Node node){
+        if (node == null){
+            return;
+        }
+        // 1. Left subtree goes first
+        postOrder(node.left);
+        // 2. Right subtree goes second
+        postOrder(node.right);
+        // 3. Finally, comes the node value
+        System.out.println(node.value + " ");
+    }
 }
