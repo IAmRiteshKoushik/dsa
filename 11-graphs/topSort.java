@@ -7,7 +7,7 @@ public class topSort {
         ArrayList<ArrayList<Integer>> adj){
         vis[node] = 1;
         for (Integer it : adj.get(node)) {
-            // If the node is not visited before run DFS recursively on it 
+            // If the node is not visited before, run DFS recursively on it 
             // and check maximum recursion depth
             if(vis[it] == 0) {
                 dfs(it, vis, st, adj);
@@ -29,7 +29,9 @@ public class topSort {
         int[] ans = new int[V];
         int i = 0;
         while(!st.isEmpty()){
+            // adds the element at "i-th" position and then upgrades i
             ans[i++] = st.peek();
+            // pop the element from stack top
             st.pop();
         }
         return ans;

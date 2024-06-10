@@ -1,9 +1,10 @@
 import java.util.ArrayList;
 import java.util.Queue;
+import java.util.LinkedList;
 
 public class bfs {
     // V is the number of elements in a graph, adj is the adjacency list
-    public ArrayList<Integer> bfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
+    public static ArrayList<Integer> bfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
         
         // Return the order of visiting elements
         ArrayList<Integer> bfs = new ArrayList<>();
@@ -34,9 +35,9 @@ public class bfs {
 
         return bfs;
     }
-    public static void main(String[] args) {
-        
-        // Sample adjacency list
-        ArrayList<Integer> res = bfsOfGraph();
-    }
+    // public static void main(String[] args) {
+    //     
+    //     // Sample adjacency list
+    //     ArrayList<Integer> res = bfsOfGraph();
+    // }
 }
